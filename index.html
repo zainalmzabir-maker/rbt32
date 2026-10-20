@@ -189,21 +189,64 @@
           <p class="text-xs text-slate-600">Padankan elemen mekatronik itu dengan menulis <strong>A, B, C</strong> atau <strong>D</strong> pada ruang yang disediakan:</p>
 
           <div class="space-y-3">
-            <div class="flex items-center justify-between p-3 bg-slate-50 border rounded-xl gap-2">
-              <span class="text-xs font-medium text-slate-700 flex-grow">(i) Kaedah kawalan sistem yang digunakan untuk mengurus, mengarah atau mengawal atur bagi tujuan produk berfungsi secara automatik</span>
-              <input type="text" id="ans_s1_i" maxlength="1" class="w-14 p-2 text-center text-sm font-bold border border-slate-300 rounded-lg uppercase" placeholder="Huruf" />
+            <div class="p-3 bg-slate-50 border rounded-xl">
+              <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="text-xs font-medium text-slate-700 flex-grow">(i) Kaedah kawalan sistem yang digunakan untuk mengurus, mengarah atau mengawal atur bagi tujuan produk berfungsi secara automatik</span>
+                <span id="status_item_s1_i" class="hidden"></span>
+                <input type="text" id="ans_s1_i" maxlength="1" class="w-14 p-2 text-center text-sm font-bold border border-slate-300 rounded-lg uppercase" placeholder="Huruf" />
+              </div>
             </div>
-            <div class="flex items-center justify-between p-3 bg-slate-50 border rounded-xl gap-2">
-              <span class="text-xs font-medium text-slate-700 flex-grow">(ii) Sebagai penghantar untuk memindahkan suatu sumber gerakan kepada bentuk yang lain</span>
-              <input type="text" id="ans_s1_ii" maxlength="1" class="w-14 p-2 text-center text-sm font-bold border border-slate-300 rounded-lg uppercase" placeholder="Huruf" />
+            <div class="p-3 bg-slate-50 border rounded-xl">
+              <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="text-xs font-medium text-slate-700 flex-grow">(ii) Sebagai penghantar untuk memindahkan suatu sumber gerakan kepada bentuk yang lain</span>
+                <span id="status_item_s1_ii" class="hidden"></span>
+                <input type="text" id="ans_s1_ii" maxlength="1" class="w-14 p-2 text-center text-sm font-bold border border-slate-300 rounded-lg uppercase" placeholder="Huruf" />
+              </div>
             </div>
-            <div class="flex items-center justify-between p-3 bg-slate-50 border rounded-xl gap-2">
-              <span class="text-xs font-medium text-slate-700 flex-grow">(iii) Sambungan fizikal komponen dalam suatu litar bagi menjalankan operasi sesuatu sistem</span>
-              <input type="text" id="ans_s1_iii" maxlength="1" class="w-14 p-2 text-center text-sm font-bold border border-slate-300 rounded-lg uppercase" placeholder="Huruf" />
+            <div class="p-3 bg-slate-50 border rounded-xl">
+              <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="text-xs font-medium text-slate-700 flex-grow">(iii) Sambungan fizikal komponen dalam suatu litar bagi menjalankan operasi sesuatu sistem</span>
+                <span id="status_item_s1_iii" class="hidden"></span>
+                <input type="text" id="ans_s1_iii" maxlength="1" class="w-14 p-2 text-center text-sm font-bold border border-slate-300 rounded-lg uppercase" placeholder="Huruf" />
+              </div>
             </div>
-            <div class="flex items-center justify-between p-3 bg-slate-50 border rounded-xl gap-2">
-              <span class="text-xs font-medium text-slate-700 flex-grow">(iv) Sistem yang menggunakan arus elektrik sebagai sumber bekalan kuasa</span>
-              <input type="text" id="ans_s1_iv" maxlength="1" class="w-14 p-2 text-center text-sm font-bold border border-slate-300 rounded-lg uppercase" placeholder="Huruf" />
+            <div class="p-3 bg-slate-50 border rounded-xl">
+              <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="text-xs font-medium text-slate-700 flex-grow">(iv) Sistem yang menggunakan arus elektrik sebagai sumber bekalan kuasa</span>
+                <span id="status_item_s1_iv" class="hidden"></span>
+                <input type="text" id="ans_s1_iv" maxlength="1" class="w-14 p-2 text-center text-sm font-bold border border-slate-300 rounded-lg uppercase" placeholder="Huruf" />
+              </div>
+            </div>
+          </div>
+
+          <!-- RUANGAN PEMBETULAN SOALAN 1 -->
+          <div id="box_pembetulan_s1" class="hidden bg-rose-50/60 border-2 border-rose-200 rounded-2xl p-4 mt-4 space-y-3">
+            <div class="flex items-center text-rose-900 font-bold text-xs uppercase tracking-wider">
+              <i class="fa-solid fa-pen-ruler mr-2 text-rose-600"></i> Ruang Pembetulan Soalan 1
+            </div>
+            <p class="text-[11px] text-slate-600">Sila buat pembetulan padanan elemen mekatronik di bawah:</p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">(i) Kawalan</label>
+                <input type="text" id="corr_s1_i" maxlength="1" class="w-full p-2 text-center font-bold border border-rose-300 rounded-lg uppercase bg-white" placeholder="A/B/C/D" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">(ii) Penghantar</label>
+                <input type="text" id="corr_s1_ii" maxlength="1" class="w-full p-2 text-center font-bold border border-rose-300 rounded-lg uppercase bg-white" placeholder="A/B/C/D" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">(iii) Sambungan</label>
+                <input type="text" id="corr_s1_iii" maxlength="1" class="w-full p-2 text-center font-bold border border-rose-300 rounded-lg uppercase bg-white" placeholder="A/B/C/D" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">(iv) Arus kuasa</label>
+                <input type="text" id="corr_s1_iv" maxlength="1" class="w-full p-2 text-center font-bold border border-rose-300 rounded-lg uppercase bg-white" placeholder="A/B/C/D" />
+              </div>
+            </div>
+            <div class="flex justify-end pt-2">
+              <button type="button" onclick="hantarPembetulan(1)" class="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl shadow transition">
+                <i class="fa-solid fa-rotate-right mr-1.5"></i> Simpan Pembetulan S1
+              </button>
             </div>
           </div>
 
@@ -239,20 +282,50 @@
             <div class="text-slate-400 pl-4 font-mono">↓ <em>(mengapa?)</em></div>
             <div class="flex items-center gap-2">
               <span class="font-semibold text-slate-700">Langkah 1:</span>
+              <span id="status_item_s2_1" class="hidden"></span>
               <input type="text" id="ans_s2_langkah1" maxlength="1" class="w-16 p-2 text-center text-sm font-bold border border-slate-300 rounded-lg uppercase" placeholder="A/B/C" />
             </div>
             <div class="text-slate-400 pl-4 font-mono">↓ <em>(mengapa?)</em></div>
             <div class="flex items-center gap-2">
               <span class="font-semibold text-slate-700">Langkah 2:</span>
+              <span id="status_item_s2_2" class="hidden"></span>
               <input type="text" id="ans_s2_langkah2" maxlength="1" class="w-16 p-2 text-center text-sm font-bold border border-slate-300 rounded-lg uppercase" placeholder="A/B/C" />
             </div>
             <div class="text-slate-400 pl-4 font-mono">↓ <em>(mengapa?)</em></div>
             <div class="flex items-center gap-2">
               <span class="font-semibold text-slate-700">Langkah 3:</span>
+              <span id="status_item_s2_3" class="hidden"></span>
               <input type="text" id="ans_s2_langkah3" maxlength="1" class="w-16 p-2 text-center text-sm font-bold border border-slate-300 rounded-lg uppercase" placeholder="A/B/C" />
             </div>
             <div class="text-slate-400 pl-4 font-mono">↓ <em>(mengapa?)</em></div>
             <div class="font-medium text-slate-600 italic">Tiada gerak balas secukupnya untuk memberhentikan kereta yang bergerak laju untuk mengelakkan perlanggaran</div>
+          </div>
+
+          <!-- RUANGAN PEMBETULAN SOALAN 2 -->
+          <div id="box_pembetulan_s2" class="hidden bg-rose-50/60 border-2 border-rose-200 rounded-2xl p-4 mt-4 space-y-3">
+            <div class="flex items-center text-rose-900 font-bold text-xs uppercase tracking-wider">
+              <i class="fa-solid fa-pen-ruler mr-2 text-rose-600"></i> Ruang Pembetulan Soalan 2
+            </div>
+            <p class="text-[11px] text-slate-600">Susun semula langkah analisis berantai punca-kesan:</p>
+            <div class="grid grid-cols-3 gap-2 text-xs">
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">Langkah 1</label>
+                <input type="text" id="corr_s2_1" maxlength="1" class="w-full p-2 text-center font-bold border border-rose-300 rounded-lg uppercase bg-white" placeholder="A/B/C" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">Langkah 2</label>
+                <input type="text" id="corr_s2_2" maxlength="1" class="w-full p-2 text-center font-bold border border-rose-300 rounded-lg uppercase bg-white" placeholder="A/B/C" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">Langkah 3</label>
+                <input type="text" id="corr_s2_3" maxlength="1" class="w-full p-2 text-center font-bold border border-rose-300 rounded-lg uppercase bg-white" placeholder="A/B/C" />
+              </div>
+            </div>
+            <div class="flex justify-end pt-2">
+              <button type="button" onclick="hantarPembetulan(2)" class="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl shadow transition">
+                <i class="fa-solid fa-rotate-right mr-1.5"></i> Simpan Pembetulan S2
+              </button>
+            </div>
           </div>
 
           <div class="flex flex-wrap justify-between items-center pt-3 border-t bg-slate-50 p-3 rounded-xl gap-2 no-print">
@@ -277,24 +350,17 @@
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col items-center">
             <span class="text-xs font-bold text-teal-900 uppercase tracking-widest mb-3">Rajah 5: Lakaran Perkembangan Idea Pengubahsuaian Kereta Kawalan Jauh</span>
             <svg width="340" height="210" viewBox="0 0 380 230" class="border border-slate-200 rounded-xl bg-white shadow-sm p-2">
-              <!-- Badan Kereta -->
               <rect x="70" y="85" width="220" height="65" rx="14" fill="#0f766e" stroke="#134e4a" stroke-width="2.5" />
-              <!-- Bumbung & Cermin Kereta -->
               <path d="M120 85 L150 45 L230 45 L255 85 Z" fill="#ccfbf1" stroke="#0f766e" stroke-width="2" />
-              <!-- Roda Kereta Kawalan Jauh -->
               <circle cx="110" cy="155" r="26" fill="#1e293b" stroke="#0f172a" stroke-width="3" />
               <circle cx="110" cy="155" r="11" fill="#cbd5e1" />
               <circle cx="250" cy="155" r="26" fill="#1e293b" stroke="#0f172a" stroke-width="3" />
               <circle cx="250" cy="155" r="11" fill="#cbd5e1" />
-              <!-- Pengubahsuaian: Lampu LED Hadapan -->
               <rect x="285" y="100" width="16" height="18" rx="4" fill="#fbbf24" stroke="#d97706" stroke-width="2" />
               <path d="M305 102 L335 92 M305 109 L340 109 M305 116 L335 126" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" />
-              <!-- Pengubahsuaian: Penderia Inframerah / LDR -->
               <circle cx="270" cy="80" r="8" fill="#ef4444" stroke="#991b1b" stroke-width="1.5" />
-              <!-- Pengubahsuaian: Mikropengawal & Antena -->
               <line x1="135" y1="45" x2="135" y2="15" stroke="#475569" stroke-width="2.5" />
               <circle cx="135" cy="12" r="4" fill="#0284c7" />
-              <!-- Label Penambahbaikan -->
               <rect x="180" y="8" width="180" height="24" rx="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="1" />
               <text x="270" y="24" text-anchor="middle" font-size="10" font-weight="bold" fill="#78350f">Penambahan Sensor & Lampu LED</text>
             </svg>
@@ -311,19 +377,54 @@
             </div>
             <div class="flex items-center justify-between p-3 bg-slate-50 border rounded-xl gap-2">
               <span class="text-xs font-medium text-slate-700 flex-grow">(b) Memilih bahan</span>
+              <span id="status_item_s3_b" class="hidden"></span>
               <input type="number" id="ans_s3_b" min="2" max="5" class="w-14 p-2 text-center text-sm font-bold border border-slate-300 rounded-lg" />
             </div>
             <div class="flex items-center justify-between p-3 bg-slate-50 border rounded-xl gap-2">
               <span class="text-xs font-medium text-slate-700 flex-grow">(c) Membina dan memasang</span>
+              <span id="status_item_s3_c" class="hidden"></span>
               <input type="number" id="ans_s3_c" min="2" max="5" class="w-14 p-2 text-center text-sm font-bold border border-slate-300 rounded-lg" />
             </div>
             <div class="flex items-center justify-between p-3 bg-slate-50 border rounded-xl gap-2">
               <span class="text-xs font-medium text-slate-700 flex-grow">(d) Membuat pengaturcaraan</span>
+              <span id="status_item_s3_d" class="hidden"></span>
               <input type="number" id="ans_s3_d" min="2" max="5" class="w-14 p-2 text-center text-sm font-bold border border-slate-300 rounded-lg" />
             </div>
             <div class="flex items-center justify-between p-3 bg-slate-50 border rounded-xl gap-2">
               <span class="text-xs font-medium text-slate-700 flex-grow">(e) Membuat kemasan</span>
+              <span id="status_item_s3_e" class="hidden"></span>
               <input type="number" id="ans_s3_e" min="2" max="5" class="w-14 p-2 text-center text-sm font-bold border border-slate-300 rounded-lg" />
+            </div>
+          </div>
+
+          <!-- RUANGAN PEMBETULAN SOALAN 3 -->
+          <div id="box_pembetulan_s3" class="hidden bg-rose-50/60 border-2 border-rose-200 rounded-2xl p-4 mt-4 space-y-3">
+            <div class="flex items-center text-rose-900 font-bold text-xs uppercase tracking-wider">
+              <i class="fa-solid fa-pen-ruler mr-2 text-rose-600"></i> Ruang Pembetulan Soalan 3
+            </div>
+            <p class="text-[11px] text-slate-600">Susun semula langkah penambahbaikan produk (2, 3, 4, 5):</p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">(b) Pilih bahan</label>
+                <input type="number" id="corr_s3_b" min="2" max="5" class="w-full p-2 text-center font-bold border border-rose-300 rounded-lg bg-white" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">(c) Bina & pasang</label>
+                <input type="number" id="corr_s3_c" min="2" max="5" class="w-full p-2 text-center font-bold border border-rose-300 rounded-lg bg-white" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">(d) Pengaturcaraan</label>
+                <input type="number" id="corr_s3_d" min="2" max="5" class="w-full p-2 text-center font-bold border border-rose-300 rounded-lg bg-white" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">(e) Kemasan</label>
+                <input type="number" id="corr_s3_e" min="2" max="5" class="w-full p-2 text-center font-bold border border-rose-300 rounded-lg bg-white" />
+              </div>
+            </div>
+            <div class="flex justify-end pt-2">
+              <button type="button" onclick="hantarPembetulan(3)" class="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl shadow transition">
+                <i class="fa-solid fa-rotate-right mr-1.5"></i> Simpan Pembetulan S3
+              </button>
             </div>
           </div>
 
@@ -349,30 +450,26 @@
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col items-center">
             <span class="text-xs font-bold text-teal-900 uppercase tracking-widest mb-3">Rajah 6: Gambaran Awal Idea Reka Bentuk dan Fungsi Produk</span>
             <svg width="340" height="220" viewBox="0 0 360 220" class="border border-slate-200 rounded-xl bg-white shadow-sm p-2">
-              <!-- Bongkah Isometrik Produk Multifungsi -->
               <polygon points="170,30 260,75 170,120 80,75" fill="#f8fafc" stroke="#334155" stroke-width="2.5" />
               <polygon points="80,75 170,120 170,195 80,150" fill="#cbd5e1" stroke="#334155" stroke-width="2.5" />
               <polygon points="260,75 170,120 170,195 260,150" fill="#94a3b8" stroke="#334155" stroke-width="2.5" />
-              
-              <!-- Elemen Tekstur Permukaan Kayu / Beralur -->
               <line x1="95" y1="95" x2="155" y2="125" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 2" />
               <line x1="95" y1="115" x2="155" y2="145" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 2" />
-              
-              <!-- Ruang Pembahagi / Kompartmen Bekas -->
               <ellipse cx="170" cy="75" rx="35" ry="18" fill="#e2e8f0" stroke="#0f766e" stroke-width="2" />
-              
-              <!-- Penunjuk Anak Panah & Elemen Reka Bentuk -->
-              <line x1="80" y1="40" x2="115" y2="60" stroke="#0f766e" stroke-width="1.5" marker-end="url(#arrow)" />
+              <line x1="80" y1="40" x2="115" y2="60" stroke="#0f766e" stroke-width="1.5" />
               <text x="70" y="35" font-size="10" font-weight="bold" fill="#0f766e">Garisan & Rupa</text>
-
               <line x1="285" y1="120" x2="230" y2="135" stroke="#0f766e" stroke-width="1.5" />
               <text x="290" y="125" font-size="10" font-weight="bold" fill="#0f766e">Bentuk 3D & Ruang</text>
             </svg>
           </div>
 
-          <p class="text-sm font-semibold text-slate-800 leading-relaxed">
-            Rajah 6 di atas menunjukkan gambaran awal idea reka bentuk dan fungsi produk. Tandakan (✓) empat elemen reka bentuk yang perlu ada pada lakaran produk tersebut:
-          </p>
+          <div class="flex items-center justify-between">
+            <p class="text-sm font-semibold text-slate-800 leading-relaxed">
+              Rajah 6 di atas menunjukkan gambaran awal idea reka bentuk dan fungsi produk. Tandakan (✓) empat elemen reka bentuk yang perlu ada pada lakaran produk tersebut:
+            </p>
+            <span id="status_item_s4" class="hidden"></span>
+          </div>
+
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <label class="flex items-center p-3 bg-slate-50 border rounded-xl space-x-2 cursor-pointer hover:bg-teal-50">
               <input type="checkbox" id="chk_s4_garisan" class="rounded text-teal-600 focus:ring-teal-500" />
@@ -396,6 +493,41 @@
             </label>
           </div>
           <textarea id="ans_s4_tambahan" rows="2" class="w-full p-2.5 text-xs border rounded-xl" placeholder="Catatan tambahan elemen lakaran jika ada..."></textarea>
+
+          <!-- RUANGAN PEMBETULAN SOALAN 4 -->
+          <div id="box_pembetulan_s4" class="hidden bg-rose-50/60 border-2 border-rose-200 rounded-2xl p-4 mt-4 space-y-3">
+            <div class="flex items-center text-rose-900 font-bold text-xs uppercase tracking-wider">
+              <i class="fa-solid fa-pen-ruler mr-2 text-rose-600"></i> Ruang Pembetulan Soalan 4
+            </div>
+            <p class="text-[11px] text-slate-600">Pilih semula 4 elemen reka bentuk lakaran yang tepat:</p>
+            <div class="grid grid-cols-2 gap-2 text-xs">
+              <label class="flex items-center p-2 bg-white border border-rose-200 rounded-lg space-x-2 cursor-pointer">
+                <input type="checkbox" id="corr_chk_s4_garisan" class="rounded text-rose-600" />
+                <span>Garisan</span>
+              </label>
+              <label class="flex items-center p-2 bg-white border border-rose-200 rounded-lg space-x-2 cursor-pointer">
+                <input type="checkbox" id="corr_chk_s4_rupa" class="rounded text-rose-600" />
+                <span>Rupa</span>
+              </label>
+              <label class="flex items-center p-2 bg-white border border-rose-200 rounded-lg space-x-2 cursor-pointer">
+                <input type="checkbox" id="corr_chk_s4_bentuk" class="rounded text-rose-600" />
+                <span>Bentuk</span>
+              </label>
+              <label class="flex items-center p-2 bg-white border border-rose-200 rounded-lg space-x-2 cursor-pointer">
+                <input type="checkbox" id="corr_chk_s4_ruang" class="rounded text-rose-600" />
+                <span>Ruang</span>
+              </label>
+              <label class="flex items-center p-2 bg-white border border-rose-200 rounded-lg space-x-2 cursor-pointer">
+                <input type="checkbox" id="corr_chk_s4_tekstur" class="rounded text-rose-600" />
+                <span>Tekstur</span>
+              </label>
+            </div>
+            <div class="flex justify-end pt-2">
+              <button type="button" onclick="hantarPembetulan(4)" class="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl shadow transition">
+                <i class="fa-solid fa-rotate-right mr-1.5"></i> Simpan Pembetulan S4
+              </button>
+            </div>
+          </div>
 
           <div class="flex flex-wrap justify-between items-center pt-3 border-t bg-slate-50 p-3 rounded-xl gap-2 no-print">
             <span id="badge_status_4" class="text-xs text-slate-500 font-medium"><i class="fa-solid fa-clock mr-1"></i> Belum dihantar</span>
@@ -455,12 +587,38 @@
 
           <div class="space-y-3">
             <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">(a) Tentukan gergaji yang manakah paling sesuai digunakan untuk memotong bahagian berlorek X: [1 markah]</label>
+              <div class="flex justify-between items-center mb-1">
+                <label class="block text-xs font-bold text-slate-700">(a) Tentukan gergaji yang manakah paling sesuai digunakan untuk memotong bahagian berlorek X: [1 markah]</label>
+                <span id="status_item_s5_a" class="hidden"></span>
+              </div>
               <input type="text" id="ans_s5_a" class="w-full p-2.5 text-sm border rounded-xl" placeholder="Nama gergaji yang sesuai..." />
             </div>
             <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">(b) Berdasarkan jawapan anda di (a), nyatakan tiga alasan anda menggunakan alat itu: [3 markah]</label>
+              <div class="flex justify-between items-center mb-1">
+                <label class="block text-xs font-bold text-slate-700">(b) Berdasarkan jawapan anda di (a), nyatakan tiga alasan anda menggunakan alat itu: [3 markah]</label>
+                <span id="status_item_s5_b" class="hidden"></span>
+              </div>
               <textarea id="ans_s5_b" rows="3" class="w-full p-3 text-sm border rounded-xl" placeholder="1. ...&#10;2. ...&#10;3. ..."></textarea>
+            </div>
+          </div>
+
+          <!-- RUANGAN PEMBETULAN SOALAN 5 -->
+          <div id="box_pembetulan_s5" class="hidden bg-rose-50/60 border-2 border-rose-200 rounded-2xl p-4 mt-4 space-y-3">
+            <div class="flex items-center text-rose-900 font-bold text-xs uppercase tracking-wider">
+              <i class="fa-solid fa-pen-ruler mr-2 text-rose-600"></i> Ruang Pembetulan Soalan 5
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-700 mb-1">(a) Pembetulan Gergaji Sesuai:</label>
+              <input type="text" id="corr_s5_a" class="w-full p-2 text-xs border border-rose-300 rounded-lg bg-white" placeholder="Jawapan gergaji..." />
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-700 mb-1">(b) Pembetulan Tiga Alasan:</label>
+              <textarea id="corr_s5_b" rows="3" class="w-full p-2 text-xs border border-rose-300 rounded-lg bg-white" placeholder="1. ...&#10;2. ...&#10;3. ..."></textarea>
+            </div>
+            <div class="flex justify-end pt-2">
+              <button type="button" onclick="hantarPembetulan(5)" class="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl shadow transition">
+                <i class="fa-solid fa-rotate-right mr-1.5"></i> Simpan Pembetulan S5
+              </button>
             </div>
           </div>
 
@@ -491,21 +649,64 @@
           <p class="text-xs text-slate-600">Padankan jenis pengujian itu dengan menulis <strong>A</strong> atau <strong>B</strong> pada ruang yang disediakan:</p>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <div class="flex items-center justify-between p-3 bg-slate-50 border rounded-xl">
-              <span class="text-xs font-medium text-slate-700">Ujian Kefungsian</span>
-              <input type="text" id="ans_s6_i" maxlength="1" class="w-14 p-2 text-center text-sm font-bold border rounded-lg uppercase" placeholder="A/B" />
+            <div class="p-3 bg-slate-50 border rounded-xl">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-xs font-medium text-slate-700">Ujian Kefungsian</span>
+                <span id="status_item_s6_i" class="hidden"></span>
+                <input type="text" id="ans_s6_i" maxlength="1" class="w-14 p-2 text-center text-sm font-bold border rounded-lg uppercase" placeholder="A/B" />
+              </div>
             </div>
-            <div class="flex items-center justify-between p-3 bg-slate-50 border rounded-xl">
-              <span class="text-xs font-medium text-slate-700">Ujian Kekuatan</span>
-              <input type="text" id="ans_s6_ii" maxlength="1" class="w-14 p-2 text-center text-sm font-bold border rounded-lg uppercase" placeholder="A/B" />
+            <div class="p-3 bg-slate-50 border rounded-xl">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-xs font-medium text-slate-700">Ujian Kekuatan</span>
+                <span id="status_item_s6_ii" class="hidden"></span>
+                <input type="text" id="ans_s6_ii" maxlength="1" class="w-14 p-2 text-center text-sm font-bold border rounded-lg uppercase" placeholder="A/B" />
+              </div>
             </div>
-            <div class="flex items-center justify-between p-3 bg-slate-50 border rounded-xl">
-              <span class="text-xs font-medium text-slate-700">Ujian Beban</span>
-              <input type="text" id="ans_s6_iii" maxlength="1" class="w-14 p-2 text-center text-sm font-bold border rounded-lg uppercase" placeholder="A/B" />
+            <div class="p-3 bg-slate-50 border rounded-xl">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-xs font-medium text-slate-700">Ujian Beban</span>
+                <span id="status_item_s6_iii" class="hidden"></span>
+                <input type="text" id="ans_s6_iii" maxlength="1" class="w-14 p-2 text-center text-sm font-bold border rounded-lg uppercase" placeholder="A/B" />
+              </div>
             </div>
-            <div class="flex items-center justify-between p-3 bg-slate-50 border rounded-xl">
-              <span class="text-xs font-medium text-slate-700">Ujian Kesesuaian</span>
-              <input type="text" id="ans_s6_iv" maxlength="1" class="w-14 p-2 text-center text-sm font-bold border rounded-lg uppercase" placeholder="A/B" />
+            <div class="p-3 bg-slate-50 border rounded-xl">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-xs font-medium text-slate-700">Ujian Kesesuaian</span>
+                <span id="status_item_s6_iv" class="hidden"></span>
+                <input type="text" id="ans_s6_iv" maxlength="1" class="w-14 p-2 text-center text-sm font-bold border rounded-lg uppercase" placeholder="A/B" />
+              </div>
+            </div>
+          </div>
+
+          <!-- RUANGAN PEMBETULAN SOALAN 6 -->
+          <div id="box_pembetulan_s6" class="hidden bg-rose-50/60 border-2 border-rose-200 rounded-2xl p-4 mt-4 space-y-3">
+            <div class="flex items-center text-rose-900 font-bold text-xs uppercase tracking-wider">
+              <i class="fa-solid fa-pen-ruler mr-2 text-rose-600"></i> Ruang Pembetulan Soalan 6
+            </div>
+            <p class="text-[11px] text-slate-600">Padankan semula ujian dengan tepat (A atau B):</p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">Kefungsian</label>
+                <input type="text" id="corr_s6_i" maxlength="1" class="w-full p-2 text-center font-bold border border-rose-300 rounded-lg uppercase bg-white" placeholder="A/B" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">Kekuatan</label>
+                <input type="text" id="corr_s6_ii" maxlength="1" class="w-full p-2 text-center font-bold border border-rose-300 rounded-lg uppercase bg-white" placeholder="A/B" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">Beban</label>
+                <input type="text" id="corr_s6_iii" maxlength="1" class="w-full p-2 text-center font-bold border border-rose-300 rounded-lg uppercase bg-white" placeholder="A/B" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">Kesesuaian</label>
+                <input type="text" id="corr_s6_iv" maxlength="1" class="w-full p-2 text-center font-bold border border-rose-300 rounded-lg uppercase bg-white" placeholder="A/B" />
+              </div>
+            </div>
+            <div class="flex justify-end pt-2">
+              <button type="button" onclick="hantarPembetulan(6)" class="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl shadow transition">
+                <i class="fa-solid fa-rotate-right mr-1.5"></i> Simpan Pembetulan S6
+              </button>
             </div>
           </div>
 
@@ -526,13 +727,29 @@
               <span class="text-xs bg-slate-100 text-slate-700 px-3 py-1 rounded-full font-bold">[4 Markah]</span>
             </div>
           </div>
-          <p class="text-sm font-semibold text-slate-800 leading-relaxed">
-            Berikut adalah rangkaian peta alir dalam bidang pemasaran. Lengkapkan urutan yang betul dengan menyusun langkah proses pemasaran berikut:
-          </p>
+          <div class="flex items-center justify-between">
+            <p class="text-sm font-semibold text-slate-800 leading-relaxed">
+              Berikut adalah rangkaian peta alir dalam bidang pemasaran. Lengkapkan urutan yang betul dengan menyusun langkah proses pemasaran berikut:
+            </p>
+            <span id="status_item_s7" class="hidden"></span>
+          </div>
           <div class="p-3 bg-slate-50 rounded-xl border text-xs leading-relaxed">
             <strong>Pilihan Alir:</strong> Permintaan, Pertukaran, Nilai, Produk, Keperluan dan kehendak pengguna, Urus niaga, Pasaran.
           </div>
           <textarea id="ans_s7" rows="3" class="w-full p-3 text-sm border rounded-xl" placeholder="Tuliskan urutan alir pemasaran lengkap..."></textarea>
+
+          <!-- RUANGAN PEMBETULAN SOALAN 7 -->
+          <div id="box_pembetulan_s7" class="hidden bg-rose-50/60 border-2 border-rose-200 rounded-2xl p-4 mt-4 space-y-3">
+            <div class="flex items-center text-rose-900 font-bold text-xs uppercase tracking-wider">
+              <i class="fa-solid fa-pen-ruler mr-2 text-rose-600"></i> Ruang Pembetulan Soalan 7
+            </div>
+            <textarea id="corr_s7" rows="3" class="w-full p-2.5 text-xs border border-rose-300 rounded-lg bg-white" placeholder="Tulis semula urutan alir pemasaran yang betul..."></textarea>
+            <div class="flex justify-end pt-2">
+              <button type="button" onclick="hantarPembetulan(7)" class="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl shadow transition">
+                <i class="fa-solid fa-rotate-right mr-1.5"></i> Simpan Pembetulan S7
+              </button>
+            </div>
+          </div>
 
           <div class="flex flex-wrap justify-between items-center pt-3 border-t bg-slate-50 p-3 rounded-xl gap-2 no-print">
             <span id="badge_status_7" class="text-xs text-slate-500 font-medium"><i class="fa-solid fa-clock mr-1"></i> Belum dihantar</span>
@@ -563,16 +780,49 @@
 
           <div class="space-y-3">
             <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">(a) Hitungkan kos pengeluaran bagi produk di atas (nyatakan Kos Bahan, Kos Upah, Kos Overhed & Jumlah Kos Pengeluaran): [4 markah]</label>
+              <div class="flex justify-between items-center mb-1">
+                <label class="block text-xs font-bold text-slate-700">(a) Hitungkan kos pengeluaran bagi produk di atas (nyatakan Kos Bahan, Kos Upah, Kos Overhed & Jumlah Kos Pengeluaran): [4 markah]</label>
+                <span id="status_item_s8_a" class="hidden"></span>
+              </div>
               <textarea id="ans_s8_a" rows="4" class="w-full p-3 text-sm border rounded-xl font-mono" placeholder="Kos Bahan = RM...&#10;Kos Upah = RM...&#10;Kos Overhed = RM...&#10;Kos Pengeluaran = RM..."></textarea>
             </div>
             <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">(b) Hitungkan kos jualan bagi seunit produk jika kadar keuntungan ditetapkan pada 80%: [2 markah]</label>
+              <div class="flex justify-between items-center mb-1">
+                <label class="block text-xs font-bold text-slate-700">(b) Hitungkan kos jualan bagi seunit produk jika kadar keuntungan ditetapkan pada 80%: [2 markah]</label>
+                <span id="status_item_s8_b" class="hidden"></span>
+              </div>
               <textarea id="ans_s8_b" rows="3" class="w-full p-3 text-sm border rounded-xl font-mono" placeholder="Kos seunit = RM...&#10;Keuntungan seunit = RM...&#10;Kos Jualan seunit = RM..."></textarea>
             </div>
             <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">(c) Nyatakan kaedah yang digunakan dalam penentuan bajet penghasilan bakul serba guna ini: [1 markah]</label>
+              <div class="flex justify-between items-center mb-1">
+                <label class="block text-xs font-bold text-slate-700">(c) Nyatakan kaedah yang digunakan dalam penentuan bajet penghasilan bakul serba guna ini: [1 markah]</label>
+                <span id="status_item_s8_c" class="hidden"></span>
+              </div>
               <input type="text" id="ans_s8_c" class="w-full p-2.5 text-sm border rounded-xl" placeholder="Nama kaedah penentuan bajet..." />
+            </div>
+          </div>
+
+          <!-- RUANGAN PEMBETULAN SOALAN 8 -->
+          <div id="box_pembetulan_s8" class="hidden bg-rose-50/60 border-2 border-rose-200 rounded-2xl p-4 mt-4 space-y-3">
+            <div class="flex items-center text-rose-900 font-bold text-xs uppercase tracking-wider">
+              <i class="fa-solid fa-pen-ruler mr-2 text-rose-600"></i> Ruang Pembetulan Soalan 8
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-700 mb-1">(a) Pembetulan Kos Pengeluaran:</label>
+              <textarea id="corr_s8_a" rows="3" class="w-full p-2 text-xs font-mono border border-rose-300 rounded-lg bg-white" placeholder="Kira semula Kos Bahan, Upah, Overhed & Jumlah..."></textarea>
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-700 mb-1">(b) Pembetulan Kos Jualan Seunit:</label>
+              <textarea id="corr_s8_b" rows="2" class="w-full p-2 text-xs font-mono border border-rose-300 rounded-lg bg-white" placeholder="Kira semula Kos Jualan Seunit..."></textarea>
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-700 mb-1">(c) Pembetulan Kaedah Bajet:</label>
+              <input type="text" id="corr_s8_c" class="w-full p-2 text-xs border border-rose-300 rounded-lg bg-white" placeholder="Nama kaedah..." />
+            </div>
+            <div class="flex justify-end pt-2">
+              <button type="button" onclick="hantarPembetulan(8)" class="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl shadow transition">
+                <i class="fa-solid fa-rotate-right mr-1.5"></i> Simpan Pembetulan S8
+              </button>
             </div>
           </div>
 
@@ -600,19 +850,15 @@
             <div class="flex flex-col items-center">
               <span class="text-xs font-bold text-teal-900 uppercase tracking-wider mb-2">Rajah A: Pengiklanan Media Cetak</span>
               <svg width="250" height="180" viewBox="0 0 260 190" class="border rounded-xl bg-white p-2 shadow-2xs">
-                <!-- Halaman Surat Khabar / Brosur -->
                 <rect x="35" y="20" width="190" height="145" rx="4" fill="#f8fafc" stroke="#475569" stroke-width="2" />
                 <rect x="50" y="32" width="160" height="18" fill="#1e293b" />
                 <text x="130" y="45" text-anchor="middle" font-size="11" font-weight="900" fill="#ffffff" letter-spacing="2">IKLAN HARIAN</text>
-                <!-- Gambar Produk Statik -->
                 <rect x="50" y="60" width="65" height="50" fill="#cbd5e1" stroke="#64748b" stroke-width="1" />
                 <circle cx="82" cy="85" r="14" fill="#94a3b8" />
-                <!-- Baris Teks Iklan -->
                 <line x1="125" y1="65" x2="205" y2="65" stroke="#475569" stroke-width="3" />
                 <line x1="125" y1="75" x2="195" y2="75" stroke="#94a3b8" stroke-width="2" />
                 <line x1="125" y1="85" x2="200" y2="85" stroke="#94a3b8" stroke-width="2" />
                 <line x1="125" y1="95" x2="185" y2="95" stroke="#94a3b8" stroke-width="2" />
-                <!-- Maklumat Hubungan / Statik -->
                 <rect x="50" y="120" width="160" height="32" fill="#e2e8f0" rx="3" />
                 <text x="130" y="140" text-anchor="middle" font-size="9" font-weight="bold" fill="#334155">Edaran Risalah & Surat Khabar</text>
               </svg>
@@ -622,16 +868,12 @@
             <div class="flex flex-col items-center">
               <span class="text-xs font-bold text-teal-900 uppercase tracking-wider mb-2">Rajah B: Pengiklanan Media Sosial</span>
               <svg width="250" height="180" viewBox="0 0 260 190" class="border rounded-xl bg-white p-2 shadow-2xs">
-                <!-- Skrin Telefon Pintar -->
                 <rect x="65" y="10" width="130" height="170" rx="16" fill="#0f172a" stroke="#334155" stroke-width="2" />
                 <rect x="72" y="22" width="116" height="146" rx="6" fill="#ffffff" />
-                <!-- Profil Pengiklan -->
                 <circle cx="86" cy="35" r="8" fill="#0284c7" />
                 <text x="100" y="39" font-size="8" font-weight="bold" fill="#0f172a">Kedai_RBT_Online</text>
-                <!-- Video / Gambar Interaktif -->
                 <rect x="76" y="48" width="108" height="65" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" />
                 <polygon points="120,70 140,80 120,90" fill="#0284c7" />
-                <!-- Butang Interaksi: Suka, Komen, Kongsi -->
                 <text x="80" y="128" font-size="11" fill="#e11d48">❤</text>
                 <text x="96" y="128" font-size="11" fill="#0284c7">💬</text>
                 <text x="112" y="128" font-size="11" fill="#16a34a">↗</text>
@@ -648,16 +890,49 @@
 
           <div class="space-y-3">
             <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">(a) Tentukan pengiklanan yang paling sesuai digunakan untuk menyampaikan maklumat kepada pengguna dengan membuat perbandingan bagi kedua-dua pengiklanan itu: [7 markah]</label>
+              <div class="flex justify-between items-center mb-1">
+                <label class="block text-xs font-bold text-slate-700">(a) Tentukan pengiklanan yang paling sesuai digunakan untuk menyampaikan maklumat kepada pengguna dengan membuat perbandingan bagi kedua-dua pengiklanan itu: [7 markah]</label>
+                <span id="status_item_s9_a" class="hidden"></span>
+              </div>
               <textarea id="ans_s9_a" rows="5" class="w-full p-3 text-sm border rounded-xl" placeholder="Perbandingan Rajah A (Media Cetak) dan Rajah B (Media Sosial) dari segi aspek liputan, kos, dan interaktiviti...&#10;&#10;Kaedah pengiklanan paling sesuai: ..."></textarea>
             </div>
             <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">(b) Nyatakan dua jenis alat komunikasi massa melalui pengiklanan media elektronik: [2 markah]</label>
+              <div class="flex justify-between items-center mb-1">
+                <label class="block text-xs font-bold text-slate-700">(b) Nyatakan dua jenis alat komunikasi massa melalui pengiklanan media elektronik: [2 markah]</label>
+                <span id="status_item_s9_b" class="hidden"></span>
+              </div>
               <input type="text" id="ans_s9_b" class="w-full p-2.5 text-sm border rounded-xl" placeholder="Contoh: 1. ..., 2. ..." />
             </div>
             <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">(c) Nyatakan dua kaedah reka bentuk bagi iklan memujuk: [1 markah]</label>
+              <div class="flex justify-between items-center mb-1">
+                <label class="block text-xs font-bold text-slate-700">(c) Nyatakan dua kaedah reka bentuk bagi iklan memujuk: [1 markah]</label>
+                <span id="status_item_s9_c" class="hidden"></span>
+              </div>
               <input type="text" id="ans_s9_c" class="w-full p-2.5 text-sm border rounded-xl" placeholder="Contoh kaedah..." />
+            </div>
+          </div>
+
+          <!-- RUANGAN PEMBETULAN SOALAN 9 -->
+          <div id="box_pembetulan_s9" class="hidden bg-rose-50/60 border-2 border-rose-200 rounded-2xl p-4 mt-4 space-y-3">
+            <div class="flex items-center text-rose-900 font-bold text-xs uppercase tracking-wider">
+              <i class="fa-solid fa-pen-ruler mr-2 text-rose-600"></i> Ruang Pembetulan Soalan 9
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-700 mb-1">(a) Pembetulan Perbandingan & Pilihan Kaedah:</label>
+              <textarea id="corr_s9_a" rows="4" class="w-full p-2 text-xs border border-rose-300 rounded-lg bg-white" placeholder="Tuliskan semula perbandingan & pilihan pengiklanan..."></textarea>
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-700 mb-1">(b) Pembetulan Dua Alat Komunikasi Massa Elektronik:</label>
+              <input type="text" id="corr_s9_b" class="w-full p-2 text-xs border border-rose-300 rounded-lg bg-white" placeholder="Contoh: 1. ..., 2. ..." />
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-700 mb-1">(c) Pembetulan Dua Kaedah Iklan Memujuk:</label>
+              <input type="text" id="corr_s9_c" class="w-full p-2 text-xs border border-rose-300 rounded-lg bg-white" placeholder="Contoh kaedah..." />
+            </div>
+            <div class="flex justify-end pt-2">
+              <button type="button" onclick="hantarPembetulan(9)" class="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl shadow transition">
+                <i class="fa-solid fa-rotate-right mr-1.5"></i> Simpan Pembetulan S9
+              </button>
             </div>
           </div>
 
@@ -792,7 +1067,6 @@
   <script>
     const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz74rhc1ySBS4p4YLADG4yZg5tqwsqxDemaR-jssgN_4F6oDWS5QQSHrq-GsyqmWwHEQg/exec";
 
-    // SENARAI 49 ORANG MURID BARU DARI GAMBAR
     const SENARAI_MURID = [
       { nama: "ADAM HAFIY BIN ROHAIZAD", ic: "111016010759" },
       { nama: "AHMAD IRFAN DANIEL BIN AHMAD FAZRIN", ic: "111105010857" },
@@ -845,17 +1119,7 @@
       { nama: "YOW SING ONN", ic: "110914011441" }
     ];
 
-    const SOALAN_MAP = {
-      1: ["s1_i", "s1_ii", "s1_iii", "s1_iv"],
-      2: ["s2_langkah1", "s2_langkah2", "s2_langkah3"],
-      3: ["s3_b", "s3_c", "s3_d", "s3_e"],
-      4: ["s4_elemen"],
-      5: ["s5_a", "s5_b"],
-      6: ["s6_i", "s6_ii", "s6_iii", "s6_iv"],
-      7: ["s7"],
-      8: ["s8_a", "s8_b", "s8_c"],
-      9: ["s9_a", "s9_b", "s9_c"]
-    };
+    const ALL_QUESTION_KEYS = ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9"];
 
     function normalizeIc(val) {
       if (!val) return "";
@@ -972,8 +1236,6 @@
         skema: `[10 Markah]:\n(a) Perbandingan 6m + Pilihan (Rajah B/Media Sosial) 1m [7m]\n(b) Dua alat komunikasi massa elektronik (Televisyen / Radio / Papan Iklan Digital) [2m]\n(c) Dua kaedah iklan memujuk (Kiasan, Perbandingan, Sorotan) [1m]`
       }
     };
-
-    const ALL_QUESTION_KEYS = Object.keys(SKEMA_DATA);
 
     let currentUser = null;
     let currentRole = null;
@@ -1218,6 +1480,31 @@
       }
     }
 
+    // PENANDAAN VISUAL: TICK (✓) / PANGKAH (✗) & AKTIFKAN RUANGAN PEMBETULAN
+    function paparkanSemakanDanPembetulan(soalanNo, subItemsStatus, isOverallCorrect) {
+      Object.keys(subItemsStatus).forEach(itemId => {
+        const badgeEl = document.getElementById(`status_item_${itemId}`);
+        if (badgeEl) {
+          const isBetul = subItemsStatus[itemId];
+          badgeEl.classList.remove("hidden");
+          if (isBetul) {
+            badgeEl.innerHTML = '<span class="px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded font-black text-xs inline-flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-1"></i> Betul</span>';
+          } else {
+            badgeEl.innerHTML = '<span class="px-2 py-0.5 bg-rose-100 text-rose-800 rounded font-black text-xs inline-flex items-center"><i class="fa-solid fa-xmark text-rose-600 mr-1"></i> Salah</span>';
+          }
+        }
+      });
+
+      const boxPembetulan = document.getElementById(`box_pembetulan_s${soalanNo}`);
+      if (boxPembetulan) {
+        if (!isOverallCorrect) {
+          boxPembetulan.classList.remove("hidden");
+        } else {
+          boxPembetulan.classList.add("hidden");
+        }
+      }
+    }
+
     async function segerakKemajuanDanMarkahMurid(ic) {
       const st = document.getElementById("saveStatus");
       st.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-1"></i> Menyemak status di Google Sheet...';
@@ -1265,6 +1552,46 @@
                 bNilai.classList.remove("hidden");
               }
             });
+
+            // ANALISIS SETIAP SUB-SOALAN UNTUK TICK (✓) ATAU PANGKAH (✗)
+            const s1_1 = document.getElementById("ans_s1_i").value.toUpperCase() === "D";
+            const s1_2 = document.getElementById("ans_s1_ii").value.toUpperCase() === "B";
+            const s1_3 = document.getElementById("ans_s1_iii").value.toUpperCase() === "C";
+            const s1_4 = document.getElementById("ans_s1_iv").value.toUpperCase() === "A";
+            paparkanSemakanDanPembetulan(1, { "s1_i": s1_1, "s1_ii": s1_2, "s1_iii": s1_3, "s1_iv": s1_4 }, (s1_1 && s1_2 && s1_3 && s1_4));
+
+            const s2_1 = document.getElementById("ans_s2_langkah1").value.toUpperCase() === "C";
+            const s2_2 = document.getElementById("ans_s2_langkah2").value.toUpperCase() === "A";
+            const s2_3 = document.getElementById("ans_s2_langkah3").value.toUpperCase() === "B";
+            paparkanSemakanDanPembetulan(2, { "s2_1": s2_1, "s2_2": s2_2, "s2_3": s2_3 }, (s2_1 && s2_2 && s2_3));
+
+            const s3_b = document.getElementById("ans_s3_b").value === "2";
+            const s3_c = document.getElementById("ans_s3_c").value === "3";
+            const s3_d = document.getElementById("ans_s3_d").value === "4";
+            const s3_e = document.getElementById("ans_s3_e").value === "5";
+            paparkanSemakanDanPembetulan(3, { "s3_b": s3_b, "s3_c": s3_c, "s3_d": s3_d, "s3_e": s3_e }, (s3_b && s3_c && s3_d && s3_e));
+
+            const s4Score = r.markahPerItem["s4"] || 0;
+            paparkanSemakanDanPembetulan(4, { "s4": s4Score >= 4 }, s4Score >= 4);
+
+            const s5a = document.getElementById("ans_s5_a").value.toLowerCase().includes("jig");
+            const s5bScore = (r.markahPerItem["s5"] || 0) >= 4;
+            paparkanSemakanDanPembetulan(5, { "s5_a": s5a, "s5_b": s5bScore }, (s5a && s5bScore));
+
+            const s6_1 = document.getElementById("ans_s6_i").value.toUpperCase() === "A";
+            const s6_2 = document.getElementById("ans_s6_ii").value.toUpperCase() === "A";
+            const s6_3 = document.getElementById("ans_s6_iii").value.toUpperCase() === "B";
+            const s6_4 = document.getElementById("ans_s6_iv").value.toUpperCase() === "B";
+            paparkanSemakanDanPembetulan(6, { "s6_i": s6_1, "s6_ii": s6_2, "s6_iii": s6_3, "s6_iv": s6_4 }, (s6_1 && s6_2 && s6_3 && s6_4));
+
+            const s7Score = (r.markahPerItem["s7"] || 0) >= 4;
+            paparkanSemakanDanPembetulan(7, { "s7": s7Score }, s7Score);
+
+            const s8Score = (r.markahPerItem["s8"] || 0);
+            paparkanSemakanDanPembetulan(8, { "s8_a": s8Score >= 4, "s8_b": s8Score >= 6, "s8_c": s8Score >= 7 }, s8Score >= 7);
+
+            const s9Score = (r.markahPerItem["s9"] || 0);
+            paparkanSemakanDanPembetulan(9, { "s9_a": s9Score >= 6, "s9_b": s9Score >= 8, "s9_c": s9Score >= 10 }, s9Score >= 10);
           }
           st.innerHTML = '<i class="fa-solid fa-stamp text-emerald-600 mr-1"></i> Kertas Telah Ditanda';
         } else {
@@ -1319,6 +1646,72 @@
         alert("Disimpan setempat di peranti (Sambungan awan tergendala).");
         btn.disabled = false;
         btn.innerHTML = originalText;
+      }
+    }
+
+    // FUNGSI MENGHANTAR PEMBETULAN OLEH MURID
+    async function hantarPembetulan(soalanNo) {
+      if (!currentUser) return;
+      let textPembetulan = "";
+
+      if (soalanNo === 1) {
+        textPembetulan = [
+          document.getElementById("corr_s1_i").value.toUpperCase(),
+          document.getElementById("corr_s1_ii").value.toUpperCase(),
+          document.getElementById("corr_s1_iii").value.toUpperCase(),
+          document.getElementById("corr_s1_iv").value.toUpperCase()
+        ].filter(Boolean).join(" | ");
+      } else if (soalanNo === 2) {
+        textPembetulan = [
+          document.getElementById("corr_s2_1").value.toUpperCase(),
+          document.getElementById("corr_s2_2").value.toUpperCase(),
+          document.getElementById("corr_s2_3").value.toUpperCase()
+        ].filter(Boolean).join(" -> ");
+      } else if (soalanNo === 3) {
+        textPembetulan = `b:${document.getElementById("corr_s3_b").value}, c:${document.getElementById("corr_s3_c").value}, d:${document.getElementById("corr_s3_d").value}, e:${document.getElementById("corr_s3_e").value}`;
+      } else if (soalanNo === 4) {
+        let chks = [];
+        if (document.getElementById("corr_chk_s4_garisan").checked) chks.push("Garisan");
+        if (document.getElementById("corr_chk_s4_rupa").checked) chks.push("Rupa");
+        if (document.getElementById("corr_chk_s4_bentuk").checked) chks.push("Bentuk");
+        if (document.getElementById("corr_chk_s4_ruang").checked) chks.push("Ruang");
+        if (document.getElementById("corr_chk_s4_tekstur").checked) chks.push("Tekstur");
+        textPembetulan = chks.join(", ");
+      } else if (soalanNo === 5) {
+        textPembetulan = `(a) ${document.getElementById("corr_s5_a").value} \n(b) ${document.getElementById("corr_s5_b").value}`;
+      } else if (soalanNo === 6) {
+        textPembetulan = `(i) ${document.getElementById("corr_s6_i").value.toUpperCase()} | (ii) ${document.getElementById("corr_s6_ii").value.toUpperCase()} | (iii) ${document.getElementById("corr_s6_iii").value.toUpperCase()} | (iv) ${document.getElementById("corr_s6_iv").value.toUpperCase()}`;
+      } else if (soalanNo === 7) {
+        textPembetulan = document.getElementById("corr_s7").value;
+      } else if (soalanNo === 8) {
+        textPembetulan = `(a) ${document.getElementById("corr_s8_a").value} \n(b) ${document.getElementById("corr_s8_b").value} \n(c) ${document.getElementById("corr_s8_c").value}`;
+      } else if (soalanNo === 9) {
+        textPembetulan = `(a) ${document.getElementById("corr_s9_a").value} \n(b) ${document.getElementById("corr_s9_b").value} \n(c) ${document.getElementById("corr_s9_c").value}`;
+      }
+
+      if (!textPembetulan.trim()) {
+        alert("Sila lengkapkan ruangan pembetulan terlebih dahulu.");
+        return;
+      }
+
+      const payload = {
+        action: "hantar_pembetulan",
+        soalanNo: soalanNo,
+        nama: currentUser.nama,
+        nokp: normalizeIc(currentUser.ic),
+        answers: { [`s${soalanNo}`]: `[PEMBETULAN]: ${textPembetulan}` }
+      };
+
+      try {
+        await fetch(SCRIPT_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify(payload)
+        });
+        alert(`Pembetulan Soalan ${soalanNo} telah berjaya direkodkan!`);
+      } catch (e) {
+        alert("Pembetulan disimpan di peranti setempat.");
       }
     }
 
